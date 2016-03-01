@@ -15,7 +15,7 @@ See [the Rigor blog](http://rigor.com/blog/2016/02/integrating-performance-analy
 Once configured, this webhook will:
 
 1. Trigger a new Zoompf snapshot on deploy of your server via Semaphore
-2. Compare the new snapshot to the previous one
+2. Compare the new snapshot to the previous one (compares total defect count)
 3. Post the results in Slack
 
 ![Slack screenshot](https://www.evernote.com/shard/s39/sh/5f851c43-3ffc-4928-84da-ef9609633726/372cbbc41d40809d/res/6871fb18-ea86-45d6-a1e1-ae080b28b8d4/skitch.png)
