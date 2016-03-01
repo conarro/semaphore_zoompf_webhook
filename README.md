@@ -2,6 +2,8 @@
 
 _A Ruby-based web service to connect JIRA tickets and Intercom conversations_
 
+See [the Rigor blog](http://rigor.com/blog/2016/02/integrating-performance-analysis-continuous-deployment) for more on how this works.
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## How it works
