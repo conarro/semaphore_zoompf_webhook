@@ -1,0 +1,43 @@
+{
+  "name": "Semaphore Zoompf Webhook",
+  "description": "A web service to trigger and compare Zoompf snapshots after a successful Semaphore deploy",
+  "keywords": [
+    "semaphore",
+    "zoompf",
+    "rigor",
+    "webhook",
+    "web performance",
+    "monitoring",
+    "performance"
+  ],
+  "website": "https://github.com/Rigor/semaphore_zoompf_webhook",
+  "repository": "https://github.com/Rigor/semaphore_zoompf_webhook",
+  "env": {
+    "APP_USERNAME": {
+      "description": "Username used for basic auth",
+      "generator": "secret"
+    },
+    "APP_PASSWORD": {
+      "description": "Password used for basic auth",
+      "generator": "secret"
+    },
+    "ZOOMPF_API_KEY": {
+      "description": "API key for your Zoompf account",
+      "value": "zoompf_api_key"
+    },
+    "ZOOMPF_TEST_ID": {
+      "description": "ID of the Zoompf test to trigger snapshots for",
+      "value": "zoompf_test_id"
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "Slack webhook URL to notify when a snapshot is triggered",
+      "value": "http://your.slack.webhook"
+    },
+    "SEMAPHORE_SERVER_REGEX": {
+      "description": "Optional regular expression used to match the deployed server from Semaphore"
+    }
+  },
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ]
+}
