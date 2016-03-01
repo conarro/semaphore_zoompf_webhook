@@ -2,7 +2,7 @@
 
 _A Ruby-based web service to connect JIRA tickets and Intercom conversations_
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rigor/semaphore_zoompf_webhook/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## How it works
 
