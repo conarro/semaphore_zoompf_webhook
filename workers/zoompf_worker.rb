@@ -36,7 +36,7 @@ class ZoompfWorker
     snapshots        = api_client.v2_snapshots_get(ZOOMPF_TEST_ID, p_order_by: 'ScanAddedUTC', p_per_page: 2).snapshots
     new_snapshot     = snapshots.first
     new_defect_count = new_snapshot.defect_count_total_1pc + new_snapshot.defect_count_total_3pc
-    old_snapshot     = snapshots.first
+    old_snapshot     = snapshots.last
     old_defect_count = old_snapshot.defect_count_total_1pc + old_snapshot.defect_count_total_3pc
 
     comparison_url   = zoompf_compare_url(old_snapshot.snapshot_id, new_snapshot.snapshot_id)
@@ -55,7 +55,7 @@ class ZoompfWorker
   private
 
   def zoompf_compare_url old_snapshot, new_snapshot
-    "https://my.zoompf.com/c/#{old_snapshot}/#{new_snapshot}"
+    "https://optimization.rigor.com/c/#{old_snapshot}/#{new_snapshot}"
   end
 
   def api_client
