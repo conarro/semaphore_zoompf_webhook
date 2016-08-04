@@ -1,6 +1,4 @@
-# JIRA / Intercom Webhook
-
-_A Ruby-based web service to connect JIRA tickets and Intercom conversations_
+# Semaphore Zoompf Webhook
 
 See [the Rigor blog](http://rigor.com/blog/2016/02/integrating-performance-analysis-continuous-deployment) for more on how this works.
 

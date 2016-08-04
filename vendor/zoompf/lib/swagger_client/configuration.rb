@@ -104,7 +104,7 @@ module SwaggerClient
 
     def initialize
       @scheme = 'https'
-      @host = 'api.zoompf.com'
+      @host = 'optimization-api.rigor.com'
       @base_path = ''
       @api_key = {}
       @api_key_prefix = {}
